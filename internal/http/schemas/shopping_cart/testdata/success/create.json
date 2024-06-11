@@ -1,0 +1,13 @@
+[
+  {
+    "scenario": "success_input",
+    "payload": {
+      "items": [
+        {
+          "name": "olis",
+          "price": 10
+        }
+      ]
+    }
+  }
+]

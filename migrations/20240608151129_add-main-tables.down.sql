@@ -1,0 +1,7 @@
+BEGIN;
+
+DROP TABLE IF EXISTS schwarz.coupon CASCADE;
+DROP TABLE IF EXISTS schwarz.item CASCADE;
+DROP TABLE IF EXISTS schwarz.shopping_cart CASCADE;
+
+COMMIT;

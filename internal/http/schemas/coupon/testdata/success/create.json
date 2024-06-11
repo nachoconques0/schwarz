@@ -1,0 +1,9 @@
+[
+  {
+    "scenario": "success_input",
+    "payload": {
+      "name": "FREE30",
+      "amount": 30
+    }
+  }
+]

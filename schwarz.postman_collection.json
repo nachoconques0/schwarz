@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "cba5423e-7a79-4c1b-abcc-0a62d921b64f",
+		"name": "schwarz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30979157"
+	},
+	"item": [
+		{
+			"name": "Shopping Cart",
+			"item": [
+				{
+					"name": "Shopping Cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"items\": [\n        {\n            \"name\": \"item 1\",\n            \"description\": \"test description\",\n            \"price\": 100\n        },\n        {\n            \"name\": \"item 2\",\n            \"description\": \"test description\",\n            \"price\": 30.30\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/shopping-cart"
+					},
+					"response": [
+						{
+							"name": "Shopping Cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"items\": [\n        {\n            \"name\": \"item 1\",\n            \"description\": \"test description\",\n            \"price\": 100\n        },\n        {\n            \"name\": \"item 2\",\n            \"description\": \"test description\",\n            \"price\": 30.30\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8080/shopping-cart"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Apply Coupon",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/shopping-cart/:id/apply-coupon/:coupon_id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"shopping-cart",
+								":id",
+								"apply-coupon",
+								":coupon_id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "f2c929fa-7e3e-40a0-9e41-2d5a76fc5a97"
+								},
+								{
+									"key": "coupon_id",
+									"value": "53f90f23-88a9-4c64-a4dd-dd9ec7de019f"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Apply Coupon",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/shopping-cart/:id/apply-coupon/:coupon_id",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"shopping-cart",
+										":id",
+										"apply-coupon",
+										":coupon_id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "f2c929fa-7e3e-40a0-9e41-2d5a76fc5a97"
+										},
+										{
+											"key": "coupon_id",
+											"value": "53f90f23-88a9-4c64-a4dd-dd9ec7de019f"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "List Shopping Carts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/shopping-cart"
+					},
+					"response": [
+						{
+							"name": "List Shopping Carts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:8080/shopping-cart"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Coupon",
+			"item": [
+				{
+					"name": "Create Coupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"FREE30\",\n    \"amount\": 30\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/coupon"
+					},
+					"response": [
+						{
+							"name": "Create Coupon",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"FREE30\",\n    \"amount\": 30\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "localhost:8080/coupon"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "List Coupon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/coupon"
+					},
+					"response": [
+						{
+							"name": "List Coupon",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:8080/coupon"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}

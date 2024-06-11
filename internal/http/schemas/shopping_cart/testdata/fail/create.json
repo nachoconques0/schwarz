@@ -1,0 +1,55 @@
+  [
+    {
+      "scenario": "fail_empty_payload",
+      "payload": {}
+    },
+    {
+      "scenario": "fail_empty_items",
+      "payload": {
+        "items": []
+      }
+    },
+    {
+      "scenario": "fail_invalid_item_name",
+      "payload": {
+        "items": [
+          {
+            "name": 0,
+            "price": 5
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "fail_invalid_item_price",
+      "payload": {
+        "items": [
+          {
+            "name": "olis",
+            "price": -1
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "fail_empty_item_name",
+      "payload": {
+        "items": [
+          {
+            "price": 10
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "fail_empty_item_price",
+      "payload": {
+        "items": [
+          {
+            "name": "olis"
+          }
+        ]
+      }
+    }
+  ]
+  

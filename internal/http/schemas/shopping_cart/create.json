@@ -1,0 +1,33 @@
+{
+  "title": "create shopping cart",
+  "required": [
+    "items"
+  ],
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 4
+          },
+          "price": {
+            "type": "number",
+            "minimum": 5
+          }
+        },
+        "minimum": 0,
+        "required": [
+          "name",
+          "price"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}

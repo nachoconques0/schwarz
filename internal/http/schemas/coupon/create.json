@@ -1,0 +1,19 @@
+{
+  "title": "create coupon",
+  "required": [
+    "name",
+    "amount"
+  ],
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 4
+    },
+    "amount": {
+      "type": "number",
+      "minimum": 5
+    }
+  },
+  "additionalProperties": false
+}

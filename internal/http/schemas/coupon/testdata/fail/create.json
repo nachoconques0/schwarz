@@ -1,0 +1,33 @@
+  [
+    {
+      "scenario": "fail_invalid_name",
+      "payload": {
+        "name": "",
+        "amount": 30
+      }
+    },
+    {
+      "scenario": "fail_invalid_amount",
+      "payload": {
+        "name": "FREE30",
+        "amount": 0
+      }
+    },
+    {
+      "scenario": "fail_empty_name",
+      "payload": {
+        "amount": 30
+      }
+    },
+    {
+      "scenario": "fail_empty_amount",
+      "payload": {
+        "name": "FREE30"
+      }
+    },
+    {
+      "scenario": "fail_empty_payload",
+      "payload": {}
+    }
+  ]
+  
